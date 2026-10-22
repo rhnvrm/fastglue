@@ -42,3 +42,7 @@ import "github.com/zerodha/fastglue"
 - [Serve static file](examples/static-file)
 - [Singleton](examples/singleton)
 - [Graceful shutdown](examples/graceful)
+
+## Requirements
+
+Go 1.26 or newer.

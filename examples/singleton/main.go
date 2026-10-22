@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"log"
 	"os"
 	"time"
@@ -48,7 +47,7 @@ func handleIndex(r *fastglue.Request) error {
 		app = r.Context.(*App)
 	)
 
-	app.log.Printf(fmt.Sprintf("index called. user-agent:%s, args: %q", r.RequestCtx.UserAgent(), r.RequestCtx.QueryArgs()))
+	app.log.Printf("index called. user-agent:%s, args: %q", r.RequestCtx.UserAgent(), r.RequestCtx.QueryArgs())
 
 	return r.SendEnvelope(map[string]string{
 		"version": app.version,
